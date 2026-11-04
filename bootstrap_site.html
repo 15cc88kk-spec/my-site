@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портфолио</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<style>
+html{scroll-behavior:smooth}
+.bg-orange{background:#f97b00}
+.orange{color:#f97b00}
+.hero{height:60vh;background:url('https://placehold.co/1400x700/999999/ffffff?text=Header') center/cover}
+section{padding:50px 0;background:#f3f3f3}
+section h2{text-align:center;color:#f97b00;margin-bottom:30px}
+.about-img{width:220px;height:220px;border-radius:50%;object-fit:cover}
+.about-text{border-left:4px solid #1a7f8e;padding-left:20px}
+.team .card{border:0}
+.team .name{background:#f97b00;color:#fff;text-align:center;padding:4px;border-bottom-left-radius:50% 20px;border-bottom-right-radius:50% 20px;transition:.3s}
+.team .card:hover .name{padding:30px 4px}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-orange fixed-top">
+<a class="navbar-brand" href="#home">Главная</a>
+<button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+<li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Команда</a></li>
+<li class="nav-item"><a class="nav-link" href="#blog">Блог</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+</ul></div></nav>
+
+<div class="hero" id="home"></div>
+
+<section id="about"><div class="container"><h2>Обо мне</h2>
+<div class="row align-items-center">
+<div class="col-md-4 text-center mb-3"><img class="about-img" src="https://placehold.co/300x300/1a7f8e/ffffff?text=Me" alt=""><p class="text-muted small mt-2">Веб-разработчик</p></div>
+<div class="col-md-8 about-text"><h4 style="color:#1a7f8e">Джон Дэвис</h4>
+<p class="text-muted">Привет! Я веб-разработчик. Создаю адаптивные сайты на HTML, CSS и Bootstrap, а ещё люблю учиться новому и делиться опытом.</p></div>
+</div></div></section>
+
+<section id="portfolio" style="background:#fff"><div class="container"><h2>Портфолио</h2>
+<div class="row">
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/2ecc71/ffffff?text=Work+1" alt=""></div>
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/3498db/ffffff?text=Work+2" alt=""></div>
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/e67e22/ffffff?text=Work+3" alt=""></div>
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/9b59b6/ffffff?text=Work+4" alt=""></div>
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/e74c3c/ffffff?text=Work+5" alt=""></div>
+<div class="col-md-4 mb-3"><img class="img-fluid" src="https://placehold.co/400x250/34495e/ffffff?text=Work+6" alt=""></div>
+</div></div></section>
+
+<section id="blog"><div class="container"><h2>Блог</h2>
+<div class="row">
+<div class="col-md-4 mb-3"><div class="card shadow-sm"><img class="card-img-top" src="https://placehold.co/400x200/888/fff?text=Post+1" alt=""><div class="card-body"><h5 class="card-title orange">Название записи</h5><p class="card-text small">Краткое описание записи: здесь можно рассказать о проекте, новости или полезном совете.</p><a href="#" class="card-link">Читать далее</a></div></div></div>
+<div class="col-md-4 mb-3"><div class="card shadow-sm"><img class="card-img-top" src="https://placehold.co/400x200/c0392b/fff?text=NEWS" alt=""><div class="card-body"><h5 class="card-title orange">Название записи</h5><p class="card-text small">Краткое описание записи: здесь можно рассказать о проекте, новости или полезном совете.</p><a href="#" class="card-link">Читать далее</a></div></div></div>
+<div class="col-md-4 mb-3"><div class="card shadow-sm"><img class="card-img-top" src="https://placehold.co/400x200/555/fff?text=Post+3" alt=""><div class="card-body"><h5 class="card-title orange">Название записи</h5><p class="card-text small">Краткое описание записи: здесь можно рассказать о проекте, новости или полезном совете.</p><a href="#" class="card-link" data-toggle="modal" data-target="#m">Читать далее</a></div></div></div>
+</div></div></section>
+
+<section id="team" class="team" style="background:#fff"><div class="container"><h2>Наша команда</h2>
+<div class="row">
+<div class="col-6 col-md-3 mb-3"><div class="card"><img class="card-img-top" src="https://placehold.co/300x300/ddd/333?text=Sara" alt=""><div class="name">Сара</div><small class="text-muted">Менеджер</small></div></div>
+<div class="col-6 col-md-3 mb-3"><div class="card"><img class="card-img-top" src="https://placehold.co/300x300/ccc/333?text=Chris" alt=""><div class="name">Крис</div><small class="text-muted">Инженер</small></div></div>
+<div class="col-6 col-md-3 mb-3"><div class="card"><img class="card-img-top" src="https://placehold.co/300x300/ddd/333?text=Layla" alt=""><div class="name">Лейла</div><small class="text-muted">Дизайнер</small></div></div>
+<div class="col-6 col-md-3 mb-3"><div class="card"><img class="card-img-top" src="https://placehold.co/300x300/ccc/333?text=Jirard" alt=""><div class="name">Дж. Джирард</div><small class="text-muted">Руководитель команды</small></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container text-center"><h2>Контакты</h2>
+<button class="btn btn-warning" data-toggle="tooltip" title="Напишите нам!">info@example.com</button></div></section>
+
+<div class="modal fade" id="m"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Название записи</h5><button class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">Полный текст записи.</div></div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>$('[data-toggle="tooltip"]').tooltip()</script>
+</body>
+</html>

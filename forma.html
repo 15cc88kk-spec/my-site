@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заказ мебели</title>
+<style>
+body{font-family:Arial,sans-serif;background:#faf6f0}
+form{max-width:500px;margin:20px auto;background:#fff;padding:20px;border:2px solid #a8682c;border-radius:10px}
+label{display:block;margin-top:10px;font-weight:bold}
+input[type=text],input[type=email],input[type=password],input[type=tel],input[type=number],input[type=date],select,textarea{width:100%;padding:8px;box-sizing:border-box;border:1px solid #a8682c;border-radius:5px}
+input:focus,select:focus,textarea:focus{background:#fff3e0;outline:none}
+input[type=submit],input[type=reset],button{margin-top:15px;padding:10px 18px;border:0;border-radius:5px;background:#a8682c;color:#fff}
+input[type=submit]:hover{background:#7b4a1e}
+</style>
+</head>
+<body>
+<form action="#" method="post">
+<h2>Заказ мебели</h2>
+<fieldset><legend>Личные данные</legend>
+<label for="n">Имя:</label><input type="text" id="n" name="name" required placeholder="Ваше имя">
+<label for="e">Email:</label><input type="email" id="e" name="email" required>
+<label for="t">Телефон:</label><input type="tel" id="t" name="tel">
+<label for="p">Пароль:</label><input type="password" id="p" name="pass">
+<label for="a">Возраст:</label><input type="number" id="a" name="age" min="18" max="99">
+<label for="d">Дата доставки:</label><input type="date" id="d" name="date">
+</fieldset>
+<fieldset><legend>Заказ</legend>
+<label for="s">Товар:</label>
+<select id="s" name="item"><optgroup label="Мягкая"><option>Диван</option><option>Кресло</option></optgroup><optgroup label="Корпусная"><option>Шкаф</option><option>Кухня</option></optgroup></select>
+<label for="m">Несколько вариантов:</label>
+<select id="m" name="multi" multiple size="3"><option>Доставка</option><option>Сборка</option><option>Подъём на этаж</option></select>
+<p>Оплата:</p>
+<label><input type="radio" name="pay" value="cash" checked> Наличные</label>
+<label><input type="radio" name="pay" value="card"> Карта</label>
+<p>Дополнительно:</p>
+<label><input type="checkbox" name="sms"> Получать SMS</label>
+<label><input type="checkbox" name="gift"> Подарочная упаковка</label>
+<label for="c">Цвет:</label><input type="color" id="c" name="color" value="#a8682c">
+<label for="r">Срочность:</label><input type="range" id="r" name="range" min="1" max="10">
+<label for="f">Фото комнаты:</label><input type="file" id="f" name="file">
+<label for="k">Комментарий:</label><textarea id="k" name="comment" rows="4"></textarea>
+</fieldset>
+<input type="hidden" name="source" value="site">
+<input type="submit" value="Отправить"> <input type="reset" value="Очистить"> <button type="button">Кнопка</button>
+</form>
+</body>
+</html>
